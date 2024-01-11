@@ -2,7 +2,8 @@
 const mongoose = require("mongoose");
 
 // MongoDB Connection String
-const connectionString = "mongodb://localhost:27017/gold-rates-db"; // Update with your DB name
+const connectionString =
+  "mongodb+srv://vignesh:<0DSRbN0CUZ8S7VK7>@cluster0.2zrfree.mongodb.net//gold-rates-db"; // Update with your DB name
 
 // Connect to MongoDB
 mongoose
