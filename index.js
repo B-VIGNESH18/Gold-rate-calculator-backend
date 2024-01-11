@@ -16,7 +16,7 @@ const corsOptions = {
 };
 
 app.use(cors());
-app.get((request, res) => {
+app.get("/", (request, res) => {
   res.send("hellow");
 });
 app.get("/gold-rates", (req, res) => {
