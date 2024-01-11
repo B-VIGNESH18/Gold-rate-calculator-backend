@@ -15,6 +15,7 @@ const corsOptions = {
   allowedHeaders: ["Content-Type", "Authorization"],
 };
 
+app.use(cors());
 app.get("/gold-rates", (req, res) => {
   // Mock gold rate data
   const goldRates = [
