@@ -15,7 +15,6 @@ const corsOptions = {
   allowedHeaders: ["Content-Type", "Authorization"],
 };
 
-app.use(cors(corsOptions));
 app.get("/gold-rates", (req, res) => {
   // Mock gold rate data
   const goldRates = [
@@ -30,10 +29,10 @@ app.get("/gold-rates", (req, res) => {
 });
 app.get("/chart-data", (req, res) => {
   // Mock chart data (an array of numbers for demonstration)
-  // const chartData = {
-  //   labels: ["Jan", "Feb", "Mar", "Apr", "May"], // Array of labels for the x-axis
-  //   dataPoints: [100, 110, 105, 115, 120], // Array of data points for the y-axis
-  // };
+  const chartData = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May"], // Array of labels for the x-axis
+    dataPoints: [100, 110, 105, 115, 120], // Array of data points for the y-axis
+  };
 
   // Respond with the chart data in JSON format
   res.json(chartData);
