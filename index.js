@@ -16,6 +16,9 @@ const corsOptions = {
 };
 
 app.use(cors());
+app.get((request, res) => {
+  res.send("hellow");
+});
 app.get("/gold-rates", (req, res) => {
   // Mock gold rate data
   const goldRates = [
