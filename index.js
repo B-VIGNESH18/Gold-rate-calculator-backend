@@ -116,7 +116,7 @@ const app = express();
 
 // Add your frontend URL to the CORS configuration
 const corsOptions = {
-  origin: "http://localhost:5173", // Replace with your actual frontend URL
+  origin: "https://voluble-cranachan-9883e5.netlify.app/", // Replace with your actual frontend URL
   optionsSuccessStatus: 200,
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type", "Authorization"],
