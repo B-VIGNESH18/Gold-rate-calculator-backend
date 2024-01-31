@@ -327,7 +327,7 @@ const mongoose = require("./db"); // Import the MongoDB connection
 
 const app = express();
 const corsOptions = {
-  origin: "http://localhost:5173/", // Replace with your actual frontend URL
+  origin: "https://voluble-cranachan-9883e5.netlify.app/", // Replace with your actual frontend URL
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   optionsSuccessStatus: 204,
