@@ -326,7 +326,12 @@ const goldRatesRouter = require("./routes/goldRates");
 const mongoose = require("./db"); // Import the MongoDB connection
 
 const app = express();
-
+const corsOptions = {
+  origin: "http://localhost:5173/", // Replace with your actual frontend URL
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true,
+  optionsSuccessStatus: 204,
+};
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
